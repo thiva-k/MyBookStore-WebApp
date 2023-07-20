@@ -12,10 +12,12 @@ const db= mysql.createConnection({
 }
 )
 
+PORT = 8800;
+
 app.use(express.json())
 app.use(cors())
 
-app.listen(8800, ()=>{
+app.listen(process.env.PORT || PORT, ()=>{
     console.log("Connected to backend !!")
 })
 

@@ -5,7 +5,7 @@ import { Link, useNavigate } from "react-router-dom";
 
 export const Add = () => {
 
-  const [book, setBook]= useState({
+  const [book,setBook]= useState({
     title:'',
     description:'',
     cover:''

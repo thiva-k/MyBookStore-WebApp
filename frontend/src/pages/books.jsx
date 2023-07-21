@@ -10,7 +10,7 @@ const Books = () => {
   useEffect(()=>{
     const fetchAllBooks = async()=>{
       try{
-        const res = await axios.get("http://localhost:8800/books")
+        const res = await axios.get("https://mybookstore-backend-25dbfaa2abba.herokuapp.com/books")
         setBooks(res.data)
         
       }catch(err){
@@ -22,7 +22,7 @@ const Books = () => {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`http://localhost:8800/books/${id}`);
+      await axios.delete(`https://mybookstore-backend-25dbfaa2abba.herokuapp.com/books/${id}`);
       window.location.reload()
     } catch (err) {
       console.log(err);

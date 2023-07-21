@@ -21,7 +21,7 @@ export const Add = () => {
   const handleClick = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:8800/books", book);
+      await axios.post("https://mybookstore-backend-25dbfaa2abba.herokuapp.com/books", book);
       navigate("/");
     } catch (err) {
       console.log(err);

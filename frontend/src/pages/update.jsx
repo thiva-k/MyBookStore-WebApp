@@ -23,7 +23,7 @@ const Update = () => {
     e.preventDefault();
 
     try {
-      const res = await  axios.put(`http://localhost:8800/books/${bookId}`, book);
+      const res = await  axios.put(`https://mybookstore-backend-25dbfaa2abba.herokuapp.com/books/${bookId}`, book);
       console.log("success");
       navigate("/");
     } catch (err) {

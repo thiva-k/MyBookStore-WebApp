@@ -20,7 +20,7 @@ const Books = () => {
     fetchAllBooks()
   },[])
 
-  const handleDelete = async (id) => {
+  const handleDelete =  async (id) => {
     try {
       await axios.delete(`https://mybookstore-backend-25dbfaa2abba.herokuapp.com/books/${id}`);
       window.location.reload()

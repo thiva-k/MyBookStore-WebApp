@@ -8,7 +8,7 @@ const db= mysql.createConnection({
    // Configure MysSQL Credentials
 }
 )
-//mysql://b63a925d95cddc:cf203baf@us-cdbr-east-06.cleardb.net/heroku_55ba8481f3cfbc2?
+
 const PORT = 8800;
 
 app.use(express.json())

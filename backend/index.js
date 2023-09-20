@@ -5,10 +5,7 @@ import cors from "cors"
 const app =express() 
 
 const db= mysql.createConnection({
-    host:"us-cdbr-east-06.cleardb.net",
-    user:"b63a925d95cddc",
-    password: "cf203baf",
-    database: "heroku_55ba8481f3cfbc2"
+   // Configure MysSQL Credentials
 }
 )
 //mysql://b63a925d95cddc:cf203baf@us-cdbr-east-06.cleardb.net/heroku_55ba8481f3cfbc2?
